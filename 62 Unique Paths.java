@@ -4,16 +4,27 @@
  * move either down or right at any point in time. The robot is trying to reach 
  * the bottom-right corner of the grid. How many possible unique paths are there?
  * 
+ * Input: m = 3, n = 2
+ * Output: 3
+ * 
+ * Explanation:
+ * From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+ * 1. Right -> Right -> Down
+ * 2. Right -> Down -> Right
+ * 3. Down -> Right -> Right
+ * 
  * https://leetcode.com/problems/isomorphic-strings/
  *
  */
 
 class Solution {
     public int uniquePaths(int m, int n) {
+        /**
+         * g[i][j] is the number of paths from the cell (i,j) to the
+         * bottom-right corner
+         */
         int[][] g = new int[m][n];
-        // g[i][j] = number of paths from the cell (i,j) to the
-        // bottom-right corner
-        
+
         // one path for all the cells on the bottom row
         for (int j = 0; j <= n - 1; j++)
             g[0][j] = 1;
@@ -31,5 +42,5 @@ class Solution {
 }
 
 /**
-* Expected time: O(n), space: O(n), where n = source.length. 
+ * Time complexity: O(m * n) 
 */ 
