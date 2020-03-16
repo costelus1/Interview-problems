@@ -1,23 +1,23 @@
 /**
-* Given a 2D board of characters and a word, find if the word appears in the 
-* grid. The word can be constructed from letters of sequentially adjacent cells, 
-* where "adjacent" cells are those horizontally or vertically neighboring. The
-* same cell may not be used more than once.
-* 
-* Example:
-* board =
-* [
-*   ['A','B','C','E'],
-*   ['S','F','C','S'],
-*   ['A','D','E','E']
-* ]
-* Given word = "ABCCED", return true.
-* Given word = "SEE", return true.
-* Given word = "ABCB", return false.
-*
-* https://leetcode.com/problems/word-search/
-*
-*/
+ * Given a 2D board of characters and a word, find if the word appears in the 
+ * grid. The word can be constructed from letters of sequentially adjacent cells, 
+ * where "adjacent" cells are those horizontally or vertically neighboring. The
+ * same cell may not be used more than once.
+ * 
+ * Example:
+ * board =
+ * [
+ *   ['A','B','C','E'],
+ *   ['S','F','C','S'],
+ *   ['A','D','E','E']
+ * ]
+ * Given word = "ABCCED", return true.
+ * Given word = "SEE", return true.
+ * Given word = "ABCB", return false.
+ *
+ * https://leetcode.com/problems/word-search/
+ *
+ */
 
 class Solution {
     public boolean exist(char[][] board, String word) 
@@ -32,8 +32,8 @@ class Solution {
     }
     
     /**
-    * match the string target starting from the cell (startR, startC)
-    */
+     * match the string target starting from the cell (startR, startC)
+     */
     public boolean match(char[][] board, int startR, int startC, String target)
     {
         if (target.length() == 0) return true; // we matched all characters
