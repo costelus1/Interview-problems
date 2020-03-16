@@ -20,16 +20,16 @@
 class Solution {
     public int uniquePaths(int m, int n) {
         /**
-         * g[i][j] is the number of paths from the cell (i,j) to the
+         * g[i][j] is the number of paths from cell (i,j) to the
          * bottom-right corner
          */
         int[][] g = new int[m][n];
 
-        // one path for all the cells on the bottom row
+        // one path for all cells on the bottom row
         for (int j = 0; j <= n - 1; j++)
             g[0][j] = 1;
         
-        // one path for all the cells on the rightmost column
+        // one path for all cells on the rightmost column
         for (int i = 0; i <= m - 1; i++)
             g[i][n - 1] = 1;
         
