@@ -11,7 +11,7 @@
 *   ['S','F','C','S'],
 *   ['A','D','E','E']
 * ]
-* If word = "ABCCED", return true.
+* Given word = "ABCCED", return true.
 * Given word = "SEE", return true.
 * Given word = "ABCB", return false.
 *
