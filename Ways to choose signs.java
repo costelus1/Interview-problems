@@ -51,5 +51,5 @@ class Solution {
 }
 
 /**
- * Running time: expected O(n*S), where S is the sum of elements of the input array
+ * Running time: O(n*S), where S is the sum of elements of the input array
  */
